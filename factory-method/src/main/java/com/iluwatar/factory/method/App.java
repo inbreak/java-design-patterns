@@ -38,6 +38,10 @@ import org.slf4j.LoggerFactory;
  * {@link OrcBlacksmith}, {@link ElfBlacksmith}) then override the method to produce objects of
  * their liking.
  * 
+ * 工厂方法：
+ * 定义创建对象（XxWeapon）的接口（Blacksmith）以及方法（manufactureWeapons），
+ * 让子类(ElfBlacksmith,OrcBlacksmith)决定实现哪一个类(ElfWeapon,OrcWeapon)，
+ * （将XxWeapon类的实例化交给XxBlacksmith类的manufactureWeapons方法）。
  */
 public class App {
 

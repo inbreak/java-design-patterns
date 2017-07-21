@@ -18,6 +18,8 @@ Kit
 Provide an interface for creating families of related or dependent
 objects without specifying their concrete classes.
 
+提供一个创建一系列相关或相互依赖对象的接口，而无需指定它们具体的类。
+
 ![alt text](./etc/abstract-factory_1.png "Abstract Factory")
 
 ## Applicability
@@ -31,6 +33,12 @@ Use the Abstract Factory pattern when
 *	you need a run-time value to construct a particular dependency
 *	you want to decide which product to call from a family at runtime.
 *	you need to supply one or more parameters only known at run-time before you can resolve a dependency.
+
+一个系统要独立于它的产品的创建、组合和表示时。
+一个系统要由多个产品系列中的一个来配置时。
+当你要强调一系列相关的产品对象的设计以便进行联合使用时。
+当你提供一个产品类库，而只想显示它们的接口而不是实现时。
+
 
 ## Use Cases:	
 

@@ -39,6 +39,9 @@ import org.slf4j.LoggerFactory;
  * {@link ElfKingdomFactory}, {@link OrcKingdomFactory}). The example uses both concrete implementations to create a
  * king, a castle and an army.
  * 
+ * 抽象工厂：
+ * 提供一个创建一系列相关对象(King,Castle,Army)的接口（KingdomFactory），而无需指定具体的类(ElfKing,ElfCastle,ElfArmy)
+ * 、(OrcKing,OrcCastle,OrcArmy)。
  */
 public class App {
 

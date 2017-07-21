@@ -16,6 +16,8 @@ Separate the construction of a complex object from its
 representation so that the same construction process can create different
 representations.
 
+将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。
+
 ![alt text](./etc/builder_1.png "Builder")
 
 ## Applicability
@@ -23,6 +25,9 @@ Use the Builder pattern when
 
 * the algorithm for creating a complex object should be independent of the parts that make up the object and how they're assembled
 * the construction process must allow different representations for the object that's constructed
+
+当创建复杂对象的算法应该独立于该对象的组成部分以及它们的装配方式时。
+当构造过程必须允许被构造的对象有不同的表示时。（构造方法调用后允许通过addon的方式改变成员变量）
 
 ## Real world examples
 

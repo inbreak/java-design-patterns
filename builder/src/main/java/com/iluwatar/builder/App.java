@@ -49,6 +49,9 @@ import org.slf4j.LoggerFactory;
  * {@link Builder} interface. When configuration is ready the build method is called to receive
  * the final {@link Hero} object.
  * 
+ * 构建者模式：
+ * 将一个复杂对象的构建它的表示分离，使得同样的构建过程可以通过addon方式(withXxx方法)创建不同的Hero对象。
+ *
  */
 public class App {
 
