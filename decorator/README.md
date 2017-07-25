@@ -19,6 +19,8 @@ Attach additional responsibilities to an object dynamically.
 Decorators provide a flexible alternative to subclassing for extending
 functionality.
 
+动态地给一个对象添加一些额外的职责。就增加功能来说，Decorators模式相比生成子类更为灵活。
+
 ![alt text](./etc/decorator.png "Decorator")
 
 ## Applicability
@@ -27,6 +29,11 @@ Use Decorator
 * To add responsibilities to individual objects dynamically and transparently, that is, without affecting other objects
 * For responsibilities that can be withdrawn
 * When extension by subclassing is impractical. Sometimes a large number of independent extensions are possible and would produce an explosion of subclasses to support every combination. Or a class definition may be hidden or otherwise unavailable for subclassing
+
+在不影响其他对象的情况下，以动态、透明的方式给单个对象添加职责。
+处理那些可以撤消的职责。
+当不能采用生成子类的方法进行扩充时。一种情况是，可能有大量独立的扩展，为支持每一种组合将产生大量的子类，使得子类数目呈爆炸性增长。
+  另一种情况可能是因为类定义被隐藏，或类定义不能用于生成子类。
 
 ## Real world examples
  * [java.io.InputStream](http://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html), [java.io.OutputStream](http://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html),

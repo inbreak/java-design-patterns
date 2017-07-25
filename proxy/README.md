@@ -18,6 +18,8 @@ Surrogate
 Provide a surrogate or placeholder for another object to control
 access to it.
 
+为其他对象提供一种代理以控制对这个对象的访问。
+
 ![alt text](./etc/proxy.png "Proxy")
 
 ## Applicability
@@ -28,6 +30,10 @@ are several common situations in which the Proxy pattern is applicable
 * Remote proxy provides a local representative for an object in a different address space.
 * Virtual proxy creates expensive objects on demand.
 * Protection proxy controls access to the original object. Protection proxies are useful when objects should have different access rights.
+//在需要用比较通用和复杂的对象指针代替简单的指针的时候，使用Proxy模式。
+远程代理（Remote Proxy）为一个对象在不同的地址空间提供局部代表。
+虚代理（Virtual Proxy）根据需要创建开销很大的对象
+保护代理（Protection Proxy）控制对原始对象的访问。保护代理用于对象应该有不同 的访问权限的时候。
 
 ## Typical Use Case
 

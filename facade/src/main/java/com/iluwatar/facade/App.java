@@ -34,6 +34,10 @@ package com.iluwatar.facade;
  * In this example the Facade is ({@link DwarvenGoldmineFacade}) and it provides a simpler interface
  * to the goldmine subsystem.
  * 
+ * Facade: 对子系统操作接口的封装。（如Android中ContextImpl对各种Manager的封装）。
+ * Facade为子系统（DwarvenMineWorker）中的一组接口（goToSleep，wakeUp...）提供一个统一的接口（startNewDay, digOutGold, endDay），
+ * Facade模式定义了一个高层接口(startNewDay, digOutGold, endDay)，这个接口使得这一子系统（DwarvenMineWorker）更加容易使用。
+ *
  */
 public class App {
 

@@ -44,6 +44,7 @@ package com.iluwatar.adapter;
  * captain needs a battleship which can fire and move. The spec is in {@link BattleShip}. We will
  * use the Adapter pattern to reuse {@link FishingBoat}.
  *
+ * 适配器（BattleFishingBoat）将一个类（FishingBoat）转换成Captain所期望的接口（BattleShip）
  */
 public class App {
 

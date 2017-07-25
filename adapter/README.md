@@ -19,6 +19,8 @@ Convert the interface of a class into another interface the clients
 expect. Adapter lets classes work together that couldn't otherwise because of
 incompatible interfaces.
 
+将一个类的接口转换成客户希望的另外一个接口。Adapter模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作。
+
 ![alt text](./etc/adapter.png "Adapter")
 
 ## General usage of Adapter Pattern: 
@@ -30,6 +32,10 @@ Use the Adapter pattern when
 * you want to use an existing class, and its interface does not match the one you need
 * you want to create a reusable class that cooperates with unrelated or unforeseen classes, that is, classes that don't necessarily have compatible interfaces
 * you need to use several existing subclasses, but it's impractical to adapt their interface by subclassing every one. An object adapter can adapt the interface of its parent class.
+
+你想使用一个已经存在的类，而它的接口不符合你的需求。
+你想创建一个可以复用的类，该类可以与其他不相关的类或不可预见的类（即那些接口可能不一定兼容的类）协同工作。
+（仅适用于对象Adapter ）你想使用一些已经存在的子类，但是不可能对每一个都进行子类化以匹配它们的接口。对象适配器可以适配它的父类接口。
 
 ## Consequences:
 Class and object adapters have different trade-offs. A class adapter

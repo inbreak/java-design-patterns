@@ -33,6 +33,9 @@ import java.util.List;
  * This makes the goldmine easier to operate and cuts the dependencies from the goldmine user to the
  * subsystems.
  *
+ * 暴露给client的接口(startNewDay, digOutGold, endDay)
+ *  子系统（DwarvenGoldDigger，DwarvenCartOperator，DwarvenTunnelDigger）
+ *  参考etc/MyFaddcade.txt
  */
 public class DwarvenGoldmineFacade {
 

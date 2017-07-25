@@ -31,6 +31,8 @@ package com.iluwatar.bridge;
  * {@link MagicWeaponImpl}) have their own class hierarchies. The interface of the implementations
  * can be changed without affecting the clients.
  * 
+ * 通过（BlindingMagicWeaponImpl）将抽象部分(BlindingMagicWeapon)与它的实现部分(Excalibur)分离，使它们都可以独立地变化。
+ * BlindingMagicWeapon(增加blind()), BlindingMagicWeaponImpl（）, Excalibur（实现blind()）
  */
 public class App {
 

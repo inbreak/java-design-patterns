@@ -1,0 +1,39 @@
+//MyFacade.png
+/*
+Facade模式注重简化接口。
+Adapter模式注重转换接口。
+Bridge模式注重分离接口（抽象）与其实现。
+Decorator模式注重稳定接口的前提下为对象扩展功能。
+*/
+
+public class MyFacade{
+
+	private PowerSystem mPowerSystem = new PowerSystem();
+	private VoiceSystem mVoiceSystem = new VoiceSystem();
+	private ChannelSystem mChannelSystem = new ChannelSystem();
+
+	public void powerOn() {
+		mPowerSystem.powerOn();
+	}
+
+	public void powerOff() {
+		mPowerSystem.powerOff();
+	}
+
+	public void turnUp() {
+		mVoiceSystem.turnUp();
+	}
+
+	public void turnDown() {
+		mVoiceSystem.turnDown();
+	}
+
+	public void nextChannel() {
+		mChannelSystem.next();
+	}
+
+	public void prevChannel() {
+		mChannelSystem.prev();
+	}
+	
+}

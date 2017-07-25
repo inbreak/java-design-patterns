@@ -37,6 +37,14 @@ package com.iluwatar.proxy;
  * In this example the proxy ({@link WizardTowerProxy}) controls access to the actual object (
  * {@link IvoryTower}).
  * 
+ * 通过代理类（WizardTowerProxy）控制访问 实体类（IvoryTower）
+ *
+ * 装饰模式：以对客户端透明的方式扩展对象的功能，是继承关系的一个替代方案；
+ * 代理模式：给一个对象提供一个代理对象，并有代理对象来控制对原有对象的引用；
+ * 装饰模式应该为所装饰的对象增强功能；代理模式对代理的对象施加控制，并不提供对象本身的增强功能。
+ * 代理模式与装饰模式的区别：
+ *   使用代理模式，代理和真实对象之间的的关系通常在编译时就已经确定了，而装饰者能够在运行时递归地被构造。
+ *
  */
 public class App {
 
